@@ -22,7 +22,8 @@ public class CruddemoApplication {
 
 		return runner -> {
 			//changeName(studentDAO);
-			removeStudent(studentDAO);
+
+			//removeStudent(studentDAO);
 		};
 
 

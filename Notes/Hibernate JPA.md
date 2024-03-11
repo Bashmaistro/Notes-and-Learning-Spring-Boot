@@ -77,8 +77,8 @@ Make no-arg or arg constructor:
 
 
 ## Create Object
+![](Pasted%20image%2020240306051211.png)
 
-![[Pasted image 20240306051211.png]]
 
 We create Student Dao and StudentDaOImpl class.
 
@@ -93,9 +93,9 @@ Database independence: Can be easily adapted to work with different database sys
 Developer productivity: Allows developers to focus on business logic rather than database operations.
 In the Spring framework, the @Repository annotation is often added to classes that represent the database access layer. This annotation tells the Spring framework that the class is a DAO and implements the corresponding configuration.
 
-![[Pasted image 20240306051617.png]]
+![](Pasted%20image%2020240306051617.png)
 
-![[Pasted image 20240306051645.png]]
+![](Pasted%20image%2020240306051645.png)
 
 
 1. @Repository Annotation:
@@ -120,9 +120,9 @@ entityManager.persist(thestudent); It permanently saves the Student object given
 This allows the data to be added to the database.
 
 
-![[Pasted image 20240306052635.png]]
 
 
+![](Pasted%20image%2020240306052635.png)
 
 **. `@Bean` Annotation:**
 
@@ -149,63 +149,63 @@ This allows the data to be added to the database.
 
 
 ## Read Object
+![](Pasted%20image%2020240309014107.png)
 
-![[Pasted image 20240309014107.png]]
 
 Firstly implement a method to Student DAO interface class.
 
-![[Pasted image 20240309014243.png]]
+![](Pasted%20image%2020240309014243.png)
 
 We telling the method to which object looking for and which key.
 
 If it couldn't find the object, will be return null object.
 
-![[Pasted image 20240309014420.png]]
 
+![](Pasted%20image%2020240309014420.png)
 
 ## Update Object
 
 We use JPA query language for retrieving objects, similar in concept to SQL.However, JPQL is based on entity name and entity fields.
 
-![[Pasted image 20240309015102.png]]
 
+![](Pasted%20image%2020240309015102.png)
 This code for retrieving all students from students table. 
 
 **Note: this is NOT the name of the datebase table. All JPQL syntax is based on entity name and entity  fields**
 
+![](Pasted%20image%2020240309015533.png)
 
-![[Pasted image 20240309015533.png]]
 
 This code retrieving all student which last name are doe.
 
-![[Pasted image 20240309015645.png]]
+![](Pasted%20image%2020240309015645.png)
 
 This code retrieving all student whose email ends in 'luv2code.com'
 
-![[Pasted image 20240309020052.png]]
+![](Pasted%20image%2020240309020052.png)
 
 We can use named paramaters. In general, named parameters make your JPQL queries more readable, secure and performant.
+![](Pasted%20image%2020240309020721.png)
 
-![[Pasted image 20240309020721.png]]
 
 As like early create method in Student Dao Interface.
 
-![[Pasted image 20240309020810.png]]
+![](Pasted%20image%2020240309020810.png)
 
 Implement the method and return query result as a List.
 
-![[Pasted image 20240309021226.png]]
- 
+
+ ![](Pasted%20image%2020240309021226.png)
 
 We can even take names by Ordered like that:
 
-![[Pasted image 20240309021425.png]]
+![](Pasted%20image%2020240309021425.png)
 
-![[Pasted image 20240309021513.png]]
+![](Pasted%20image%2020240309021513.png)
 
 We can easily implement a method for finding student by last name
 
-![[Pasted image 20240309022410.png]]
+![](Pasted%20image%2020240309022410.png)
 
 
 *Updating Student
@@ -259,3 +259,32 @@ After that in we just need to update our main application
 We can check our deleting process on the code with findById method, It will be return null object if can't find the student with who have this id .
 
 ![[Pasted image 20240312002155.png]]
+
+
+## Creating Database Table
+
+- JPA/Hibernate provides an option to automagically create database tables
+- Creates tables based on Java code with JPA/Hibernate annotations
+
+In Spring Boot configuration file: **application.properties**
+
+```
+    spring.jpa.hibernate.ddl-auto=create
+```
+
+When you run your app, JPA/Hibernate will **drop** tables then **create** them based on the JPA/Hibernate annotations in your Java code
+
+**Different application properties**
+
+
+| Property Value  | Property Description                                                                                                   |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| ==**none**==        | No action will be performed                                                                                            |
+| ==**create-only**== | Database tables are only created                                                                                       |
+| ==**drop**==            | Database tables are only drop                                                                                          |
+| ==**create**==          | Database tables are only drop followed by database tables creation                                                     |
+| ==**create-drop**==     | Database tables are only drop followed by database tables creation. On application shutdown, drop the database tables. |
+| ==**validate**==        | Validate the database tables schema                                                                                    |
+| ==**update**==          | Update the database tables schema                                                                                      |
+> Note: If database drop all data in the tables is lost. These are generally for unit testing and small project maybe :
+
