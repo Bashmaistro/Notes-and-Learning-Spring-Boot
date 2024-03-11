@@ -21,8 +21,28 @@ public class CruddemoApplication {
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO){
 
 		return runner -> {
-			changeName(studentDAO);
+			//changeName(studentDAO);
+			removeStudent(studentDAO);
 		};
+
+
+	}
+
+	private void removeStudent(StudentDAO studentDAO) {
+
+		//Just pushed the id of the student
+		studentDAO.delete(3);
+
+		//For control
+		System.out.println("Deleting student.....");
+		Student mystudent = studentDAO.findById(3);
+		if (mystudent == null){
+			System.out.println("Deleting is successful");
+
+		}else {
+			System.out.println("Deleting operation " +
+					"is not successful");
+		}
 
 
 	}
@@ -39,7 +59,7 @@ public class CruddemoApplication {
 
 	}
 
-	private void getByAlllastName(StudentDAO studentDAO) {
+	private void getByAllastName(StudentDAO studentDAO) {
 
 
 		//get a list of student by last name

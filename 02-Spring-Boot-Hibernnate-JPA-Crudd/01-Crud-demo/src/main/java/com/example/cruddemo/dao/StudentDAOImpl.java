@@ -61,5 +61,27 @@ public class StudentDAOImpl implements StudentDAO{
         return theQuery.getResultList();
     }
 
-    u
+    @Override
+    @Transactional
+    public void update(Student thestudent) {
+
+        entityManager.merge(thestudent);
+    }
+
+    //We make some changes on database for this
+    // reason we need the use transactional annotations
+    @Override
+    @Transactional
+    public void delete(Integer Id) {
+
+        //Finding student by id, but we can
+        //implement with finding id of the student with other method
+        //in main app after that we can take student object as an argument
+        Student theStudent = entityManager.find(Student.class, Id);
+
+        //Removing phase
+        entityManager.remove(theStudent);
+
+
+    }
 }

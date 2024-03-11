@@ -238,3 +238,24 @@ After that we can update our main class just adding new method.
 We use setter method from the our student class and using update method, we update  it.
 
 ## Delete Object
+
+First, adding delete method to Student Dao interface
+
+![[Pasted image 20240312001713.png]]
+
+
+
+We make some changes on database for this  reason we need the use transactional annotations.
+  
+Finding student by id, but we can implement with finding id of the student with other method  in main app after that we can take student object as an argument.
+
+![[Pasted image 20240312001749.png]]
+
+After that in we just need to update our main application
+
+
+![[Pasted image 20240312002010.png]]
+
+We can check our deleting process on the code with findById method, It will be return null object if can't find the student with who have this id .
+
+![[Pasted image 20240312002155.png]]
