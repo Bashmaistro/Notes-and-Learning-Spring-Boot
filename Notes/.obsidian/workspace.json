@@ -1,0 +1,168 @@
+{
+  "main": {
+    "id": "abb1e4d5856c721a",
+    "type": "split",
+    "children": [
+      {
+        "id": "85ec1f5aded5ca2d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2287de643ca63f33",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hibernate JPA.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e69b93654a234a5e",
+    "type": "split",
+    "children": [
+      {
+        "id": "7b4291e3f23a2438",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b909abecf7c7016a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "26e84aacee542712",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d782ca9fca67ad2c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "ed15bbff2447699b",
+    "type": "split",
+    "children": [
+      {
+        "id": "f93a43f89b74e46c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "caab61a57da18f1e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Hibernate JPA.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "97e60aad175b47c5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Hibernate JPA.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b2fda57b0f3fc253",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "330155c07b6fee15",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Hibernate JPA.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "2287de643ca63f33",
+  "lastOpenFiles": [
+    "Java Spring Boot.md",
+    "Hibernate JPA.md",
+    "Untitled/Pasted image 20240311013239 1.png",
+    "Untitled/Noise Reduction.md",
+    "Untitled/Pasted image 20240311012630 1.png",
+    "Pasted image 20240309022410.png",
+    "Untitled/Pasted image 20240311012708 1.png",
+    "Untitled/Pasted image 20240311012733 1.png",
+    "Untitled/Pasted image 20240311012833 1.png",
+    "Untitled/Pasted image 20240311012852 1.png",
+    "Untitled/Pasted image 20240311012914 1.png",
+    "Pasted image 20240229015650.png",
+    "Pasted image 20240229015446.png",
+    "Untitled.canvas",
+    "Untitled",
+    "create a link.md"
+  ]
+}
