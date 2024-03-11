@@ -207,3 +207,34 @@ We can easily implement a method for finding student by last name
 
 ![[Pasted image 20240309022410.png]]
 
+
+*Updating Student
+
+
+Firstly, we update our Student Dao class with new method update
+
+`void update(Student student);
+`
+
+Starting creating method on Student Dao Imp class we need @Transactional annotation because we have some changing on database.
+
+
+```
+@Override  
+@Transactional  
+public void update(Student thestudent) {  
+  
+    entityManager.merge(thestudent);  
+}
+```
+
+
+After that we can update our main class just adding new method.
+
+
+![[Pasted image 20240311235645.png]]
+
+
+We use setter method from the our student class and using update method, we update  it.
+
+## Delete Object

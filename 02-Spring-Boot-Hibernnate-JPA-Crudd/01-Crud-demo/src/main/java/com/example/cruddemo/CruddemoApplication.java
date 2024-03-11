@@ -32,6 +32,10 @@ public class CruddemoApplication {
 		//Finding student
 		Student student = studentDAO.findById(1);
 
+		//Updating student
+		student.setFirstName("Scooby");
+		studentDAO.update(student);
+
 
 	}
 
