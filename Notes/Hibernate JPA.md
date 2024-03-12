@@ -2,7 +2,7 @@
 
 - A framework for persisting / saving Java object in a database
 
-![[Pasted image 20240229030732.png]]
+![[Attachment/Pasted image 20240229030732 1.png]]
 
 ### Benefits of Hibernate
 
@@ -14,7 +14,7 @@
 
 - The developer defines mapping between Java class and database table
 - 
-![[Pasted image 20240229031119.png]]
+![[Attachment/Pasted image 20240229031119 1.png]]
 
 
 ### What is JPA?
@@ -28,13 +28,13 @@
 	 - Requires an implementation to be useable
 
 
-![[Pasted image 20240229031958.png]]
+![[Attachment/Pasted image 20240229031958 1.png]]
 
-![[Pasted image 20240229032115.png]]
+![[Attachment/Pasted image 20240229032115 1.png]]
 
-![[Pasted image 20240229032153.png]]
+![[Attachment/Pasted image 20240229032153 1.png]]
 
-![[Pasted image 20240229032631.png]]
+![[Attachment/Pasted image 20240229032631 1.png]]
 
 
 
@@ -51,33 +51,33 @@ Here’s a simplified sequence to run `CommandLineRunner.` in Spring Boot.
 3. `CommandLineRunner` (or `ApplicationRunner`) methods are executed.
 4. The application is now ready to serve connections or requests.
 
-![[Pasted image 20240306043343.png]]
+![[Attachment/Pasted image 20240306043343 1.png]]
 
 For Database connection:
 
-![[Pasted image 20240306043700.png]]
+![[Attachment/Pasted image 20240306043700 1.png]]
 
 
 
 Firstly create same name with table as a class:
 
 
-![[Pasted image 20240306045425.png]]
+![[Attachment/Pasted image 20240306045425 1.png]]
 
 And their column:
 
-![[Pasted image 20240306045453.png]]
+![[Attachment/Pasted image 20240306045453 1.png]]
 
 You need to make them private.
 
 Make no-arg or arg constructor: 
 
-![[Pasted image 20240306045546.png]]
+![[Attachment/Pasted image 20240306045546 1.png]]
 
 
 
 ## Create Object
-![](Pasted%20image%2020240306051211.png)
+![](Attachment/Pasted%20image%2020240306051211%201.png)
 
 
 We create Student Dao and StudentDaOImpl class.
@@ -93,9 +93,9 @@ Database independence: Can be easily adapted to work with different database sys
 Developer productivity: Allows developers to focus on business logic rather than database operations.
 In the Spring framework, the @Repository annotation is often added to classes that represent the database access layer. This annotation tells the Spring framework that the class is a DAO and implements the corresponding configuration.
 
-![](Pasted%20image%2020240306051617.png)
+![](Attachment/Pasted%20image%2020240306051617%201.png)
 
-![](Pasted%20image%2020240306051645.png)
+![](Attachment/Pasted%20image%2020240306051645%201.png)
 
 
 1. @Repository Annotation:
@@ -122,7 +122,7 @@ This allows the data to be added to the database.
 
 
 
-![](Pasted%20image%2020240306052635.png)
+![](Attachment/Pasted%20image%2020240306052635%201.png)
 
 **. `@Bean` Annotation:**
 
@@ -149,63 +149,63 @@ This allows the data to be added to the database.
 
 
 ## Read Object
-![](Pasted%20image%2020240309014107.png)
+![](Attachment/Pasted%20image%2020240309014107%201.png)
 
 
 Firstly implement a method to Student DAO interface class.
 
-![](Pasted%20image%2020240309014243.png)
+![](Attachment/Pasted%20image%2020240309014243%201.png)
 
 We telling the method to which object looking for and which key.
 
 If it couldn't find the object, will be return null object.
 
 
-![](Pasted%20image%2020240309014420.png)
+![](Attachment/Pasted%20image%2020240309014420%201.png)
 
 ## Update Object
 
 We use JPA query language for retrieving objects, similar in concept to SQL.However, JPQL is based on entity name and entity fields.
 
 
-![](Pasted%20image%2020240309015102.png)
+![](Attachment/Pasted%20image%2020240309015102%201.png)
 This code for retrieving all students from students table. 
 
 **Note: this is NOT the name of the datebase table. All JPQL syntax is based on entity name and entity  fields**
 
-![](Pasted%20image%2020240309015533.png)
+![](Attachment/Pasted%20image%2020240309015533%201.png)
 
 
 This code retrieving all student which last name are doe.
 
-![](Pasted%20image%2020240309015645.png)
+![](Attachment/Pasted%20image%2020240309015645%201.png)
 
 This code retrieving all student whose email ends in 'luv2code.com'
 
-![](Pasted%20image%2020240309020052.png)
+![](Attachment/Pasted%20image%2020240309020052%201.png)
 
 We can use named paramaters. In general, named parameters make your JPQL queries more readable, secure and performant.
-![](Pasted%20image%2020240309020721.png)
+![](Attachment/Pasted%20image%2020240309020721%201.png)
 
 
 As like early create method in Student Dao Interface.
 
-![](Pasted%20image%2020240309020810.png)
+![](Attachment/Pasted%20image%2020240309020810%201.png)
 
 Implement the method and return query result as a List.
 
 
- ![](Pasted%20image%2020240309021226.png)
+ ![](Attachment/Pasted%20image%2020240309021226%201.png)
 
 We can even take names by Ordered like that:
 
-![](Pasted%20image%2020240309021425.png)
+![](Attachment/Pasted%20image%2020240309021425%201.png)
 
-![](Pasted%20image%2020240309021513.png)
+![](Attachment/Pasted%20image%2020240309021513%201.png)
 
 We can easily implement a method for finding student by last name
 
-![](Pasted%20image%2020240309022410.png)
+![](Attachment/Pasted%20image%2020240309022410%201.png)
 
 
 *Updating Student
@@ -232,7 +232,7 @@ public void update(Student thestudent) {
 After that we can update our main class just adding new method.
 
 
-![[Pasted image 20240311235645.png]]
+![[Attachment/Pasted image 20240311235645 1.png]]
 
 
 We use setter method from the our student class and using update method, we update  it.
@@ -241,7 +241,7 @@ We use setter method from the our student class and using update method, we upda
 
 First, adding delete method to Student Dao interface
 
-![[Pasted image 20240312001713.png]]
+![[Attachment/Pasted image 20240312001713 1.png]]
 
 
 
@@ -249,16 +249,16 @@ We make some changes on database for this  reason we need the use transactional 
   
 Finding student by id, but we can implement with finding id of the student with other method  in main app after that we can take student object as an argument.
 
-![[Pasted image 20240312001749.png]]
+![[Attachment/Pasted image 20240312001749 1.png]]
 
 After that in we just need to update our main application
 
 
-![[Pasted image 20240312002010.png]]
+![[Attachment/Pasted image 20240312002010 1.png]]
 
 We can check our deleting process on the code with findById method, It will be return null object if can't find the student with who have this id .
 
-![[Pasted image 20240312002155.png]]
+![[Attachment/Pasted image 20240312002155 1.png]]
 
 
 ## Creating Database Table

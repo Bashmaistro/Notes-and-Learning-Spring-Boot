@@ -196,15 +196,15 @@ Default Scopes is Singelton. What is the singelton?
 - All dependency injections for the bean will reference for the bean.
 
 
-![[Pasted image 20240229015446.png]]
+![[Attachment/Pasted image 20240229015446 1.png]]
 
 In singelton same obejct will be used .
 
-![[Pasted image 20240229015650.png]]
+![[Attachment/Pasted image 20240229015650 1.png]]
 
 Every time it will be created new beans refers diffrent area in the memory.
 
-![[Pasted image 20240229015753.png]]
+![[Attachment/Pasted image 20240229015753 1.png]]
 
 If we use Singelton scope it will be same bu if we are use Prototype, it will be diffrent because they are refers diffrent area in the memory.
 
@@ -212,7 +212,7 @@ If we use Singelton scope it will be same bu if we are use Prototype, it will be
 
 ## 5.Bean Lifecycle
 
-![[Pasted image 20240229021410.png]]
+![[Attachment/Pasted image 20240229021410 1.png]]
 
 - You can add custom code during **bean initialization**
     - Calling custom bussiness logic methods
@@ -222,7 +222,7 @@ If we use Singelton scope it will be same bu if we are use Prototype, it will be
 	- Clean up handles to resources (db, sockets, files etc)
 
 
-![[Pasted image 20240229021750.png]]
+![[Attachment/Pasted image 20240229021750 1.png]]
 
   
 ```
