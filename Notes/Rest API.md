@@ -138,3 +138,7 @@ After that create a new class EmployeeDAO  and implementation version
 
 And we can use Service for combining different entity information and combine them;
 ![](Attachment/Pasted%20image%2020240403051214.png)
+
+
+
+![](Attachment/Pasted%20image%2020240403062314.png)
