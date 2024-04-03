@@ -142,3 +142,7 @@ And we can use Service for combining different entity information and combine th
 
 
 ![](Attachment/Pasted%20image%2020240403062314.png)
+
+
+![](Attachment/Pasted%20image%2020240403063311.png)
+Just add this and get Rest for FREE
