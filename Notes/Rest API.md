@@ -107,3 +107,34 @@ But in big project it hard to make all exception for all Rest controller for thi
 We just create name with StudentRestExceptionHandler and cut Exception from rest controller to here;
 ![](Attachment/Pasted%20image%2020240403042234.png)
 
+
+
+## FULL CRUD DEMO
+
+### JPA DAO
+
+
+
+1.App properities
+
+![](Attachment/Pasted%20image%2020240403044313.png)
+
+
+And Create entity package and Employee entity
+![](Attachment/Pasted%20image%2020240403045003.png)
+
+![](Attachment/Pasted%20image%2020240403045016.png)
+![](Attachment/Pasted%20image%2020240403045024.png)
+
+
+After that create a new class EmployeeDAO  and implementation version
+
+![](Attachment/Pasted%20image%2020240403045711.png)
+
+![](Attachment/Pasted%20image%2020240403045719.png)
+
+
+![](Attachment/Pasted%20image%2020240403045730.png)
+
+And we can use Service for combining different entity information and combine them;
+![](Attachment/Pasted%20image%2020240403051214.png)
